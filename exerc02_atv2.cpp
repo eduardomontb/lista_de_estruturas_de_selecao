@@ -1,18 +1,22 @@
-//Uma empresa decide dar um aumento de 30% aos funcion·rios cujo sal·rio È inferiora 500
-//reais. Escreva um programa que receba o sal·rio de um funcion·rio e imprima o valor do
-//sal·rio reajustado ou uma mensagem caso o funcion·rio n„o tenha direito ao aumento.
+//Uma empresa decide dar um aumento de 30% aos funcion√°rios cujo sal√°rio √© inferiora 500
+//reais. Escreva um programa que receba o sal√°rio de um funcion√°rio e imprima o valor do
+//sal√°rio reajustado ou uma mensagem caso o funcion√°rio n√£o tenha direito ao aumento.
 
 #include <stdio.h>
 
 int main(){
-	
+
+	//declara√ß√£o de variaveis
 	float salario, novo_salario;
-	
+
+	//entrada de dados
 	printf("digite o valor do salario = ");
 	scanf("%f", &salario);
-	
+
+	//processamento de dados
+	//Estrutura condicional
 	if(salario < 500){
-		novo_salario =  salario + (salario * 30 / 100);
+		novo_salario =  salario + (salario * 30 / 100); //calculo
 		
 		printf("\n\n\nO funcionario tem direito ao aumento de salario.\n");
 		printf("Novo salario com aumento de 30 porcento = %.2f", novo_salario);
