@@ -1,20 +1,23 @@
-//FaÁa um programa que verifique a validade de uma senha fornecida pelo usu·rio. A senha È
-//um conjunto de caracteres que s„o: 'ASDFG'. O programa deve imprimir mensagem de permiss„o ou negaÁ„o de acesso.
+//Fa√ßa um programa que verifique a validade de uma senha fornecida pelo usu√°rio. A senha √©
+//um conjunto de caracteres que s√£o: 'ASDFG'. O programa deve imprimir mensagem de permiss√£o ou nega√ß√£o de acesso.
 
 #include <stdio.h>
 #include <string.h>
 
 int main(){
-	
+
+	// Declara um vetor de caracteres
 	char senha[10];
+
 	
 	printf("Digite a senha de CINCO letras = ");
-	scanf("%9", senha);
-	
+	scanf("%9", senha); // L√™ a string digitada
+
+	// Compara a string digitada com a senha correta "ASDFG"
 	if  (strcmp(senha, "ASDFG")){
-		printf("Senha correta: Acesso concedido.");
+		printf("Senha correta: Acesso concedido."); // Senha correta
 	}else{
-	    printf("Senha incorreta: Acesso negado.");
+	    printf("Senha incorreta: Acesso negado."); // Senha incorreta
 }    
 	return 0;
 }
