@@ -1,27 +1,33 @@
-//Escreva um programa que leia o valor de dois n˙meros inteiros e a operaÁ„o aritmÈtica
-//desejada: calcule, ent„o, a reposta adequada. Utilize os sÌmbolos da tabela a seguir para ler
-//qual a operaÁ„o aritmÈtica escolhida:
+//Escreva um programa que leia o valor de dois n√∫meros inteiros e a opera√ß√£o aritm√©tica
+//desejada: calcule, ent√£o, a reposta adequada. Utilize os s√≠mbolos da tabela a seguir para ler
+//qual a opera√ß√£o aritm√©tica escolhida:
 
 #include <stdio.h>
 
+
 int main(){
-	
+
+	//declara√ß√£o de variaveis
 	int n1, n2;
 	float resultado;
 	char escolha;
-	
+
+	//entrada de dados
 	printf("Digite dois numeros = ");
 	scanf("%d %d", &n1, &n2);
-	
+
+	//menu de opera√ßoes disponiveis
 	printf("\nOperacoes aritmeticas\n");
 	printf("1 - soma\n");
 	printf("2 - subtracao\n");
 	printf("3 - multiplicacao\n");
 	printf("4 - divisao\n");
-	
-	printf("Digite o codigo da operaÁao = ");
+
+	//leitura do operador 
+	printf("Digite o codigo da opera√ßao = ");
 	scanf(" %c", &escolha);
-	
+
+	//estrutura condicional para verificar qual opera√ß√£o ser√° feita
 	if (escolha == '+'){
 		
 		printf("\nOperacao escolhida : soma\n");
