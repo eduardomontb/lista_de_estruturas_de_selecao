@@ -1,27 +1,31 @@
-//Faça um programa que receba o preço de um produto e o seu código de orígem e imprimaa sua procedência. A procedência obedece a seguinte tabela:
-//Código Procedência
+//FaÃ§a um programa que receba o preÃ§o de um produto e o seu cÃ³digo de orÃ­gem e imprimaa sua procedÃªncia. A procedÃªncia obedece a seguinte tabela:
+//CÃ³digo ProcedÃªncia
 //1 Sul
 //2 Norte
 //3 Leste
 //4 Oeste
 //5 ou 6 Nordeste
 //7.8 ou 9 Sudeste
-//10 até 20 Centro-Oeste
-//21 até 30 Nordeste
+//10 atÃ© 20 Centro-Oeste
+//21 atÃ© 30 Nordeste
 
 #include <stdio.h>
 
 int main(){
-	
+
+	//declaraÃ§Ã£o de variaveis
 	float preco;
 	int codigo;
-	
+
+	//entrada de dados
 	printf("Digite o valor do produto = ");
 	scanf("%f", &preco);
 	
 	printf("\nDigite o codigo de origem desse produto = ");
 	scanf("%i", &codigo);
-	
+
+	//estrutura condicional
+	// verificaÃ§Ã£o da procedÃªncia do produto com base no cÃ³digo informado
 	if (codigo == 1){
 		printf("Procedencia do produto : Sul");
 	}else if (codigo == 2){
