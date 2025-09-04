@@ -22,7 +22,8 @@ int main(){
 	printf("Com o reajuste seu salario ficou = %.2f\n", novo_salario);
 	}else {
 	    novo_salario = 1.3 * salario; //calculo do reajuste do salario
-	 
+
+	//saida de dados
 	printf("\n\n\nO salario de %.2f tem direito ao reajuste de 30 porcento.\n", salario);
 	printf("Com o reajuste seu salario ficou = %.2f\n", novo_salario);
 }
