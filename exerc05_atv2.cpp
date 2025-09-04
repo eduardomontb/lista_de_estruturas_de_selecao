@@ -1,23 +1,27 @@
-//FaÁa um programa que calcule e imprima o sal·rio reajustado de um funcion·rio de acordo com a seguinte regra:
-//ï sal·rios atÈ 300, reajuste de 50%;
-//ï sal·rios maiores que 300, reajuste de 30%.
+//Fa√ßa um programa que calcule e imprima o sal√°rio reajustado de um funcion√°rio de acordo com a seguinte regra:
+//‚Ä¢ sal√°rios at√© 300, reajuste de 50%;
+//‚Ä¢ sal√°rios maiores que 300, reajuste de 30%.
 
 #include <stdio.h>
 
 int main(){
-	
+
+	//declara√ß√£o de variaveis
 	float salario, novo_salario;
-	
+
+	//entrada de dados
 	printf("Digite seu salario, para saber qual porcentagem de reajuste voce tem direito =  ");
 	scanf("%f", &salario);
-	
+
+	//processamento de dados 
+	//Estrutura condicional
 	if (salario <= 300){
-		novo_salario = 1.5 * salario;
+		novo_salario = 1.5 * salario; //calculo do reajuste do salario menor ou igual a 300
 	
 	printf("\n\n\nO salario de %.2f tem direito ao reajuste de 50 porcento.\n", salario);
 	printf("Com o reajuste seu salario ficou = %.2f\n", novo_salario);
 	}else {
-	    novo_salario = 1.3 * salario;
+	    novo_salario = 1.3 * salario; //calculo do reajuste do salario
 	 
 	printf("\n\n\nO salario de %.2f tem direito ao reajuste de 30 porcento.\n", salario);
 	printf("Com o reajuste seu salario ficou = %.2f\n", novo_salario);
