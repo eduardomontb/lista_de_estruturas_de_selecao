@@ -1,19 +1,23 @@
-//Verificar se dados tr�s valores inteiros quaisquer os mesmo formam um tri�ngulo. Se
-//formar informar o tipo, caso contr�rio, informar que os lados n�o formam um tri�ngulo.
+//Verificar se dados três valores inteiros quaisquer os mesmo formam um triângulo. Se
+//formar informar o tipo, caso contrário, informar que os lados não formam um triângulo.
 
 #include <stdio.h>
 
 int main(){
-	
+
+	//declaração de variaveis 
 	int n1, n2, n3;
-	
+
+	//entrada de dados
 	printf("Digite tres numeros inteiros, para saber se eles podem formam um triangulo =");
 	scanf("%d %d %d", &n1, &n2, &n3);
-	
+
+	// verificação da condição de existência de um triângulo
 	if(n1 + n2 > n3 && n1 + n3 > n2 && n2 + n3 > n1){
 		
 		printf("\nForma um triangulo\n");
-		
+
+		// classificação do triângulo
 		if(n1 == n2 && n1 == n3 ){
 			
 			printf("Tipo do triangulo : Equilatero.\n");
@@ -26,8 +30,9 @@ int main(){
 		}
 
 	}else{
-		
-		printf("N�o forma tri�ngulo\n");
+
+		// caso a condição de existência não seja satisfeita
+		printf("Não forma triângulo\n");
 	}
 
  return 0;
